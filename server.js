@@ -17,8 +17,8 @@ db.once('open', () => {
 
 app.use(bodyParser.json());
 app.use(cors({
-   origin: 'https://front-app-sage.vercel.app',
-  }));
+  origin: 'http://localhost:3000',
+}));
 
 // Routes
 app.use('/api', employeeRoutes);
