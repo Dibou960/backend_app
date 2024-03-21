@@ -17,7 +17,7 @@ db.once('open', () => {
 
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'http://localhost:3000', // Autoriser uniquement les requêtes depuis localhost:3000
+   origin: 'https://front-app-sage.vercel.app',
   }));
 
 // Routes
