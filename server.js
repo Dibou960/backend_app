@@ -14,6 +14,7 @@ db.on('error', console.error.bind(console, 'Connection error:'));
 db.once('open', () => {
     console.log('Connected to MongoDB');
 });
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(cors({
