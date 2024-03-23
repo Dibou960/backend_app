@@ -17,6 +17,7 @@ db.once('open', () => {
 
 // CORS middleware
 app.use((req, res, next) => {
+        console.log('CORS middleware is present');
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Credentials', 'true');
     res.setHeader('Access-Control-Max-Age', '1800');
